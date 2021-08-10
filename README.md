@@ -102,3 +102,80 @@ print(f"정답은 {answer}입니다.")
 실행경과 = 정답은 7입니다.
 ```
 
+## 기타 연산자
+리스트, 튜플, 문자열, 딕셔너리 모두 사용 가능
+x in 리스트 -> 리스트 안에 x가 있을 때 참  
+x not in 문자열 -> 문자열 안에 x가 없을 때 참
+
+## pass 키워드
+디버깅 과정에서 조건문의 형태만 만들어 놓고 처리 부분은 비워놓고 싶은 경우 사용  
+
+## 조건부 표현식
+if ~ else문을 한 줄에 작성할 수 있다
+```
+score = 85
+result = "Success" if score >= 80 else "Fail"
+
+print(result)
+실행결과 = Success
+```
+
+## 조건문 내에서의 부등식
+타 프로그래밍 언어와 다르게 조건문 내에서 0 < x < 20 과 같은 부등식을 그대로 사용할 수 있다  
+대부분의 언어는 연산자가 여러 개일 경우 왼쪽부터 순차적으로 처리하기 때문에 제대로 된 조건문이 실행되지 않는다  
+
+## 반복문 for문
+```
+for 변수 in 리스트:
+  실행할 코드
+```
+연속적인 값을 순회할 때는 range(시작 값, 끝 값+1)를 사용  
+
+## 함수
+```
+def 함수명(매개변수):
+  실행할 코드
+  return 반환 값
+```
+
+## global 키워드
+global 키워드로 변수를 지정하면 해당 함수에서 지역 변수를 만들지 않고, 함수 바깥에 선언된 변수를 참조  
+지역변수와 전연변수의 이름이 같다면 지역변수를 참조  
+
+## 여러 개의 반환값
+c언어처럼 구조체나 포인터의 사용없이 파이썬에서 함수는 여러 개의 반환 값을 가질 수 있다  
+
+## 람다 표현식
+<img width=60% alt="스크린샷 2021-08-10 오후 11 20 07" src="https://user-images.githubusercontent.com/60692335/128884428-e7bbd164-ebcf-42a5-923c-15eac497a754.png">
+<img width=60% alt="스크린샷 2021-08-10 오후 11 21 37" src="https://user-images.githubusercontent.com/60692335/128884531-178875db-8a52-4330-aefb-69c8ceba8869.png">
+<img width=60% alt="스크린샷 2021-08-10 오후 11 22 32" src="https://user-images.githubusercontent.com/60692335/128884564-cf99b2cc-a6c5-4884-9f5f-6d067e39b7ea.png">
+
+## 실전에서 유용한 표준 라이브러리
+<img width=70% alt="스크린샷 2021-08-10 오후 11 26 33" src="https://user-images.githubusercontent.com/60692335/128885477-4bef40e0-21f7-4903-b4da-ab0d981fc620.png">
+
+## 자주 사용되는 내장 함수
+sum()  
+min(), max()  
+eval() -> 사람이 사용하는 수식을 계산해줌  
+sorted()  
+sorted() with key  
+<img width=70% alt="스크린샷 2021-08-10 오후 11 29 48" src="https://user-images.githubusercontent.com/60692335/128885532-d25fcaaa-0d9b-4564-b895-77e773c2a231.png">
+<img width=70% alt="스크린샷 2021-08-10 오후 11 30 01" src="https://user-images.githubusercontent.com/60692335/128885578-5baa4fe7-24a0-4dfe-9517-02ffae6345f6.png">
+
+## 순열과 조합
+<img width=70% alt="스크린샷 2021-08-10 오후 11 32 10" src="https://user-images.githubusercontent.com/60692335/128886530-be9f01ca-c06a-474b-8c30-09d1145d5c60.png">
+<img width=70% alt="스크린샷 2021-08-10 오후 11 33 02" src="https://user-images.githubusercontent.com/60692335/128886612-c486cfca-e188-491c-9de6-56759a6e522f.png">
+<img width=70% alt="스크린샷 2021-08-10 오후 11 33 10" src="https://user-images.githubusercontent.com/60692335/128886858-f1466dd8-17f0-4178-a5bb-193468a5b760.png">
+<img width=70% alt="스크린샷 2021-08-10 오후 11 33 20" src="https://user-images.githubusercontent.com/60692335/128886932-c6ad5f0f-daa6-4442-9472-b5b8ade06815.png">
+
+## 중복 순열과 중복 조합
+<img width=70% alt="스크린샷 2021-08-10 오후 11 33 32" src="https://user-images.githubusercontent.com/60692335/128886991-470100ba-2f40-47c7-ab49-e708f4983d77.png">
+
+## Counter
+<img width=70% alt="스크린샷 2021-08-10 오후 11 34 04" src="https://user-images.githubusercontent.com/60692335/128887031-e2f954d5-b4c1-45ad-b97a-3365f4c99013.png">
+
+## 최대 공약수와 최소 공배수
+<img width=70% alt="스크린샷 2021-08-10 오후 11 35 13" src="https://user-images.githubusercontent.com/60692335/128887080-17383bb5-ad39-48e2-a2fd-aa5fef0237ba.png">
+
+
+

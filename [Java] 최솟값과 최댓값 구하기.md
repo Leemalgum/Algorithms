@@ -10,6 +10,56 @@
 
 ## 코드
 ```
+package ch01;
+
+import java.util.Scanner;
+
+public class MinMaxProblem {
+
+	public static void main(String[] args) {
+		
+		   //int[] numbers = {10, 55, 23, 2, 79, 101, 16, 82, 30, 45};
+	    int count =0 ;
+	    int[] numbers;
+
+	    Scanner scanner = new Scanner(System.in);
+	    System.out.print("숫자 입력 : ");
+			  count = scanner.nextInt();
+
+	    numbers = new int[count];
+
+	    for(int i=0; i<count; i++){
+	      numbers[i] = scanner.nextInt();
+	    }
+
+	    int min = numbers[0];
+	    int max = numbers[0];
+
+	    int minPos = 0;
+	    int maxPos = 0;
+
+	    for(int i=1; i<numbers.length; i++) {
+
+	      if(numbers[i]<min) { 
+	        min = numbers[i]; 
+	        minPos = i+1;
+	      }
+
+	      if(numbers[i]>max) { 
+	        max = numbers[i]; 
+	        maxPos = i+1;
+	      }
+	    }
+
+	    System.out.println("min= "+min+", minPos= "+minPos);
+	    System.out.println("max= "+max+", maxPos= "+maxPos);
+
+	    scanner.close();
+
+	}
+
+}
+
  
 ```
 
